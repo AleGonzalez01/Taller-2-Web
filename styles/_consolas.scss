@@ -1,0 +1,58 @@
+.info{
+
+    background-color: $black;
+    display: flex;
+        flex-direction: row;
+
+    &__cont{
+        margin-left: 50px;
+        margin-top: 150px;
+        width: 30%;
+        color: $white;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__titlenav{
+        text-align: left;
+        font-family: $font;
+        font-size: 18px;
+        padding: 15px;
+    }
+    &__envios{
+        text-align: left;
+        font-family: $font;
+        font-size: 18px;
+        padding: 15px;
+
+    }
+    &__ordenar{
+        text-align: left;
+        font-family: $font;
+        font-size: 18px;
+        padding: 15px;
+
+    }
+    &__filter{
+        text-align: left;
+        font-family: $font;
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    &__a{
+        font-size:  18px;
+        text-align: left;
+        color: inherit;
+        text-decoration: none;
+        font-family: $font;
+        padding: 15px;
+        font-style: oblique;
+
+        &:hover{
+            color:$red;
+        }
+    }
+
+
+}

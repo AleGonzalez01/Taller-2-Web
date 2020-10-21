@@ -1,0 +1,70 @@
+
+.principal{
+    width: 100%;
+
+    &__image{
+        width: 100%;
+        height: 600px;
+        background-image: url(../imagenes/pexels-pixabay-371924.jpg);
+        background-size: cover;
+        
+    }
+
+    &__text{
+        width: 30%;
+        height: 100px;
+        justify-items: center;
+        position: absolute;
+        margin-left: 200px;
+        margin-top: 80px;
+        }
+
+    &__p{
+        height: 120px;
+        font-family: $font;
+        font-size:  24px;
+        color: $white;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        .principal{
+            &__image{
+                height: 400px;
+            }
+
+            &__text{
+                margin-left: 100px;
+                margin-top: 100px;
+                
+                }
+
+            &__p{
+                height: 70px;
+                font-size:  16px;
+                }
+            
+
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        .principal{
+            &__image{
+                height: 200px;
+            }
+
+            &__text{
+                width: 40%;
+                margin-left: 50px;
+                margin-top: 30px;
+                }
+
+            &__p{
+                height: 50px;
+                font-size:  12px;
+                }
+            
+
+        }
+      }

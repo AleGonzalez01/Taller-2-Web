@@ -1,0 +1,31 @@
+$red: #F22C07 ;
+$white: white ;
+$orange: #F59402;
+$black: #141414 ;
+$gray: #1D1D1D;
+$graybtn: #5F5B5A; 
+$graytwo: #5A5A5A; 
+$font: 'Questrial', sans-serif;
+$margin: 50px;
+
+
+body{
+    margin:0;
+}
+
+@import 'navegation';
+@import 'banner';
+@import 'btn';
+@import 'interaction';
+@import 'characteristic';
+@import 'gallery';
+@import 'promotion';
+@import 'table';
+@import 'newspaper';
+@import 'footer';
+@import 'consolas';
+
+
+
+
+   

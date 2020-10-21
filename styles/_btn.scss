@@ -1,0 +1,93 @@
+@mixin btnModifier($bg ) {
+    background-color: $bg;
+
+    
+    &:hover {
+      background-color: darken($bg, 6%);
+    }
+  }
+
+  @mixin btnmHeightModifier($margin) {
+    margin: $margin;
+  }
+  
+
+.buttons{
+
+    font-size: 18px;
+    width: 180px;
+    height: 50px;
+    border-radius: 15px ;
+    font-family:$font;
+    background-color: $red;
+    color:$white;
+    border-color: transparent;
+    animation: 2s, ease-in;
+    margin-right: 10px;
+
+    &:hover{
+        background-color: $orange;
+        animation: 2s, ease-in-out;
+    }
+
+    &--blacks{
+        @include btnModifier($graybtn);
+        margin-right: 10px;
+    }
+
+    &--whithspace{
+        @include btnmHeightModifier($margin);
+    }
+
+    &--border{
+      border-radius: 0px ;
+    }
+
+    &--small{
+      width: 140px;
+      height: 35px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+  .buttons{
+    font-size: 16px;
+    width: 140px;
+    height: 40px;
+    border-radius: 10px ;
+
+    &--border{
+      border-radius: 0px ;
+    }
+
+      &--small{
+        margin-left: 170px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    
+
+    
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .buttons{
+    font-size: 10px;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px 
+  }
+
+  .buttons--border{
+    border-radius: 0px ;
+  }
+
+  .buttons--small{
+    margin-left: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+      
+
