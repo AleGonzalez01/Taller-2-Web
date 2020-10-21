@@ -23,6 +23,7 @@ body {
 .navegation__image {
   margin-left: 50px;
   background-size: cover;
+  cursor: pointer;
 }
 
 .navegation__sections {
@@ -933,6 +934,7 @@ body {
 .info__cont {
   margin-left: 50px;
   margin-top: 150px;
+  margin-bottom: 150px;
   width: 30%;
   color: white;
   display: -webkit-box;

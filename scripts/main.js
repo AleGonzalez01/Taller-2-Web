@@ -1,5 +1,10 @@
 const btns = document.querySelectorAll('.interaction__buttons .buttons');
 const image = document.querySelector('.interaction__image');
+const logo = document.querySelector('.navegation__image');
+
+logo.addEventListener('click', function (){
+  window.location.href="./index.html";
+})
 
 btns.forEach(function(btn){
 
