@@ -1,0 +1,81 @@
+
+.admin{
+    background-color: $black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__container{
+        width: 80%;
+        background-color: $gray;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    justify-content: center;
+    margin: 60px;
+    }
+    &__cont{
+        color: $white;
+        
+
+    }
+    &__buttons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+
+    }
+    &__info{
+        
+        width: 80%;
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    justify-content: center;
+
+    }
+   
+
+    &__title{
+        text-align: center;
+        font-family: $font;
+        font-size: 18px;
+        padding: 15px;
+
+    }
+    &__accion{
+        padding: 30px;
+
+    }
+
+    &__products{
+        margin-left: 1000px;
+        margin-bottom: 50px;
+    }
+
+}
+
+.form {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__label{
+        text-align: center;
+        font-family: $font;
+        font-size: 18px;
+        padding: 10px;
+        
+    }
+}
+
+input{
+    width: 300px;
+    height: 40px;
+}
