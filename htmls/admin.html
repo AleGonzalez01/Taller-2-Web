@@ -37,7 +37,7 @@
 
         <form class="form form__margin">
 
-            <label class="form__label margin">
+            <label class="form__label margin" >
                  Nombre   
               <input name="name" type="text">
             </label>
@@ -54,36 +54,31 @@
 
             <label class="form__label margin">
                 Descripción
-                <input name="name" type="text">
+                <input name="descrip" type="text">
               </label>
         
             <div class="admin__accion">
                 <button class="buttons">
                     Agregar
                   </button>
-                  <button class="buttons">
-                    Eliminar
-                  </button>
-                  <button class="buttons">
-                    Editar
-                  </button>
 
             </div>
             
           </form>
         </div>
-    </div>
-       
-        <div class="admin__products">
-            <button class="buttons"> Ver productos</button>
+    </div>      
         </div>
-            
-        </div>
+
+        <section class="productslist">
+        </section>
+      
           
 
     
 
+        <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
     
-    
+        <script src="../scripts/admin.js"></script>
 </body>
 </html>

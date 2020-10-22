@@ -52,10 +52,7 @@
 
     }
 
-    &__products{
-        margin-left: 1000px;
-        margin-bottom: 50px;
-    }
+    
 
 }
 
@@ -71,6 +68,8 @@
         font-family: $font;
         font-size: 18px;
         padding: 10px;
+         display: flex;
+    flex-direction: column;
         
     }
 }

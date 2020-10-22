@@ -177,6 +177,47 @@ body {
   height: 35px;
 }
 
+.product__delete {
+  font-size: 18px;
+  width: 180px;
+  height: 50px;
+  border-radius: 15px;
+  font-family: "Questrial", sans-serif;
+  background-color: #F22C07;
+  color: white;
+  border-color: transparent;
+  -webkit-animation: 2s, ease-in;
+          animation: 2s, ease-in;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.product__delete:hover {
+  background-color: #F59402;
+  -webkit-animation: 2s, ease-in-out;
+          animation: 2s, ease-in-out;
+}
+
+.product__edit {
+  font-size: 18px;
+  width: 180px;
+  height: 50px;
+  border-radius: 15px;
+  font-family: "Questrial", sans-serif;
+  background-color: #F22C07;
+  color: white;
+  border-color: transparent;
+  -webkit-animation: 2s, ease-in;
+          animation: 2s, ease-in;
+  margin-right: 10px;
+}
+
+.product__edit:hover {
+  background-color: #F59402;
+  -webkit-animation: 2s, ease-in-out;
+          animation: 2s, ease-in-out;
+}
+
 @media screen and (max-width: 900px) {
   .buttons {
     font-size: 16px;
@@ -191,6 +232,19 @@ body {
     margin-left: 170px;
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+  .product__delete {
+    font-size: 16px;
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+  }
+  .product__edit {
+    font-size: 16px;
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
   }
 }
 
@@ -208,6 +262,19 @@ body {
     margin-left: 80px;
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+  .product__delete {
+    font-size: 10px;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+  }
+  .product__edit {
+    font-size: 10px;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
   }
 }
 
@@ -1074,11 +1141,6 @@ body {
   padding: 30px;
 }
 
-.admin__products {
-  margin-left: 1000px;
-  margin-bottom: 50px;
-}
-
 .form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1100,10 +1162,102 @@ body {
   font-family: "Questrial", sans-serif;
   font-size: 18px;
   padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 input {
   width: 300px;
   height: 40px;
+}
+
+.productslist {
+  background-color: #1D1D1D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.product {
+  width: 90%;
+  background-color: #141414;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.product__img {
+  width: 170px;
+}
+
+.product__info {
+  margin-left: 50px;
+  width: 60%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.product__name {
+  text-align: left;
+  font-family: "Questrial", sans-serif;
+  font-size: 26px;
+  padding: 10px;
+}
+
+.product__price {
+  text-align: left;
+  font-family: "Questrial", sans-serif;
+  font-size: 32px;
+  padding: 10px;
+}
+
+.product__descrip {
+  text-align: left;
+  font-family: "Questrial", sans-serif;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.product__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=main.css.map */
