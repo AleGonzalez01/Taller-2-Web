@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+    <title>Inicio Sesión</title>
+    
+    <link  rel="icon"   href="../imagenes/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href = "https://fonts.googleapis.com/css2? family = Questrial & display = swap" rel = "stylesheet">
+</head>
+<body>
+
+    <div class="forms">
+        <div class="forms__image"></div>
+        <form class="form login">
+        
+            <label class="form__label">
+              Correo
+              <input required type="email" name="email" />
+            </label>
+        
+            <label class="form__label">
+              Contraseña
+              <input required type="password" name="password" />
+            </label>
+        
+            <p class="form__error hidden">
+              Información inválida.
+            </p>
+
+            <p class="forms__p">  ¿No tienes cuenta? <a class="forms__a" href="../htmls/registrarse.html">Registrarte ahora</a></p>
+        
+            <button class="buttons" type="submit">
+              Iniciar
+            </button>
+          </form>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
+        <script src="../scripts/firebase.js"></script>
+        <script src="../scripts/login.js"></script>
+    
+</body>
+</html>
