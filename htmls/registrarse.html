@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+    <title>Registro</title>
+    
+    <link  rel="icon"   href="../imagenes/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href = "https://fonts.googleapis.com/css2? family = Questrial & display = swap" rel = "stylesheet">
+</head>
+<body>
+
+  <div class="forms">
+
+    <div class="forms__image">
+
+    </div>
+    <form class="form register">
+        <h2 class="form__title"></h2>
+    
+        <label class="form__label">
+          Nombre
+          <input required type="text" name="firstname" />
+        </label>
+    
+        <label class="form__label">
+          Apellido
+          <input required type="text" name="lastname" />
+        </label>   
+        <label class="form__label">
+          Correo
+          <input required type="email" name="email" />
+        </label>
+    
+        <label class="form__label">
+          Contraseña
+          <input required type="password" name="password" />
+        </label>
+    
+        <p class="form__error hidden">
+          Ya existe un usuario registrado con este correo.
+        </p>
+        <p class="forms__p">  ¿Ya tienes cuenta? <a class="forms__a" href="">Inicia sesión ahora</a></p>
+    
+        <button class="buttons" type="submit">
+          Registrarme
+        </button>
+      </form>
+         
+  </div>
+
+      <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
+        <script src="../scripts/firebase.js"></script>
+        <script src="../scripts/registro.js"></script>
+</body>
+</html>

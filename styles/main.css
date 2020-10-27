@@ -2,6 +2,10 @@ body {
   margin: 0;
 }
 
+.hidden {
+  display: none;
+}
+
 .navegation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1141,41 +1145,6 @@ body {
   padding: 30px;
 }
 
-.form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.form__label {
-  text-align: center;
-  font-family: "Questrial", sans-serif;
-  font-size: 18px;
-  padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-input {
-  width: 300px;
-  height: 40px;
-}
-
 .productslist {
   background-color: #1D1D1D;
   display: -webkit-box;
@@ -1259,5 +1228,82 @@ input {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.forms {
+  width: 100%;
+  height: 100vh;
+  background-color: #141414;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.forms__image {
+  background-image: url(../imagenes/Logo.png);
+  width: 500px;
+  height: 150px;
+  background-size: cover;
+}
+
+.forms__p {
+  font-family: "Questrial", sans-serif;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.forms__a {
+  font-family: "Questrial", sans-serif;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form__label {
+  text-align: center;
+  font-family: "Questrial", sans-serif;
+  font-size: 18px;
+  color: white;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+input {
+  width: 300px;
+  height: 40px;
 }
 /*# sourceMappingURL=main.css.map */
