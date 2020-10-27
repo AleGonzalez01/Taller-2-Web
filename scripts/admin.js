@@ -10,12 +10,13 @@ const form = document.querySelector('.form');
 form.addEventListener('submit', function (event) {
   event.preventDefault();
 
+ 
   const newProduct = {
     name: form.name.value,
     price: form.price.value,
     img: form.image.value,
-    descrip: form.descrip.value
-   
+    descrip: form.descrip.value,
+    category: form.category.value
   };
 
   productsRef // referencia de la colección
@@ -42,6 +43,7 @@ function renderProducts (list) {
         <h3 class="product__name">${elem.name}</h3>
         <p class="product__price">$ ${elem.price}</p>
         <p class="product__descrip">${elem.descrip}</p>
+        <p class="product__category">${elem.category}</p>
         </div>
         <div class="product__btns">
         <button class="product__delete">Eliminar</button>
@@ -100,11 +102,3 @@ function getProducts(){
   
 
 
-const btns = document.querySelectorAll('.admin__buttons .buttons');
-
-btns.forEach(function(btn){
-
-    btn.addEventListener('click', function(){
-        btn.classList.toggle("buttons--blacks");
-    })
-})

@@ -1,7 +1,7 @@
 .productslist{
     background-color: $gray;
     display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
 }
@@ -52,6 +52,16 @@
         padding: 10px;
 
     }
+
+    &__category{
+        text-align: left;
+        font-family: $font;
+        font-size: 18px;
+        padding: 10px;
+
+    }
+
+    
 
     &__btns{
         display: flex;

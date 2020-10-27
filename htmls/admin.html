@@ -24,14 +24,6 @@
 
     <div class="admin">  
         <div class="admin__container">
-    <div class="admin__cont">
-        <h1 class="admin__title">¿A cúal categoría pertenece tu producto?</h1>
-        <section class="admin__buttons">
-            <button class="buttons buttons--blacks">Consola</button>
-            <button class="buttons buttons--blacks">Juegos</button>
-            <button class="buttons buttons--blacks">Accesorios</button>
-        </section>
-    </div>
     <div class="admin__info">
         <h1 class="admin__title">Cuéntanos sobre tus productos</h1>
 
@@ -51,6 +43,15 @@
               Imagen
               <input name="image" type="url">
             </label>
+
+            <h2 class="admin__title">Selecciona la categoría de tu producto</h2>
+            <select class="admin__category" name="category" >
+                <option value="Ninguna">Ninguna</option>
+                <option value="Consolas">Consolas</option>
+                <option value="Juegos">Juegos</option>
+                <option value="Accesorios">Accesorios</option>
+
+            </select>
 
             <label class="form__label margin">
                 Descripción
