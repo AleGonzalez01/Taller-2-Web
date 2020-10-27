@@ -1271,6 +1271,10 @@ body {
   text-decoration: none;
 }
 
+.forms__a:hover {
+  color: #F22C07;
+}
+
 .form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1305,5 +1309,40 @@ body {
 input {
   width: 300px;
   height: 40px;
+}
+
+.auth {
+  background-color: #141414;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 10px;
+}
+
+.auth__profile span {
+  padding-right: 10px;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  font-family: "Questrial", sans-serif;
+}
+
+.auth__image {
+  padding-right: 10px;
+}
+
+.auth__signout {
+  padding-right: 30px;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  font-family: "Questrial", sans-serif;
 }
 /*# sourceMappingURL=main.css.map */

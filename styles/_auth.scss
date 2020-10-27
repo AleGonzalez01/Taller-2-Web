@@ -1,0 +1,28 @@
+.auth{
+    background-color: $black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 10px;
+
+
+    &__profile span{
+        padding-right: 10px;
+        font-size:  16px;
+        color: $white;
+        text-decoration: none;
+        font-family: $font;
+    }
+
+    &__image{
+        padding-right: 10px;
+    }
+
+    &__signout{
+        padding-right: 30px;
+        font-size:  16px;
+        color: $white;
+        text-decoration: none;
+        font-family: $font;
+    }
+}
