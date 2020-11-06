@@ -22,12 +22,27 @@
         </nav>
     </header>
 
-    <div class="admin">  
+    <div class="auth">
+      <div class="auth__without hidden">
+      </div>
+      <div class="auth__with hidden">
+        <a href="" class="auth__profile">
+          <img src="../imagenes/perfil.png" alt="">
+          <span></span>
+        </a>
+        <img class="auth__image" src="../imagenes/carrito.png" alt="">
+        <a href="#" class="auth__signout">
+          Cerrar sesión
+        </a>
+      </div>
+    </div>
+
+    <div class="admin ">  
         <div class="admin__container">
     <div class="admin__info">
         <h1 class="admin__title">Cuéntanos sobre tus productos</h1>
 
-        <form class="form form__margin">
+        <form class="form form__margin ">
 
             <label class="form__label margin" >
                  Nombre   
@@ -79,7 +94,10 @@
 
         <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
         <script src="../scripts/firebase.js"></script>
+        <script src="../scripts/main.js"></script>
         <script src="../scripts/admin.js"></script>
+        <script src="../scripts/auth.js"></script>
 </body>
 </html>

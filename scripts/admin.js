@@ -46,8 +46,8 @@ function renderProducts (list) {
         <p class="product__category">${elem.category}</p>
         </div>
         <div class="product__btns">
-        <button class="product__delete">Eliminar</button>
-      <button class="product__edit">Editar</button>
+        <button class="product__delete hidden showadmin">Eliminar</button>
+      <button class="product__edit hidden showadmin">Editar</button>
       </div>
         
       
@@ -75,7 +75,16 @@ function renderProducts (list) {
     const editBtn = newProduct.querySelector('.product__edit');
     editBtn.addEventListener('click', function() {
       form.name.value = elem.name;
+      form.image.value = elem.img;
+      form.price.value = elem.price;
+      form.descrip.value = elem.descrip;
+      selectedItem = elem;
     });
+
+    if(userInfo && userInfo.admin) {
+      deleteBtn.classList.remove('hidden');
+      editBtn.classList.remove('hidden');
+    }
 
     productsList.appendChild(newProduct);
   });
