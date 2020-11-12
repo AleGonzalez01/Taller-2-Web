@@ -22,6 +22,7 @@ firebase.auth().onAuthStateChanged(function(user) {
           const data = doc.data();
           userInfo = data;
           authProfileSpan.innerText = data.firstname;
+        
           
           if(data.admin) {
             const showAdmin = document.querySelectorAll('.showadmin');
