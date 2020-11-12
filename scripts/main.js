@@ -1,15 +1,7 @@
 const btns = document.querySelectorAll('.interaction__buttons .buttons');
 const image = document.querySelector('.interaction__image');
-const logo = document.querySelector('.navegation__image');
-const btn = document.querySelector('.navegation__sections button');
 
-logo.addEventListener('click', function (){
-  window.location.href='/index.html';
-})
 
-btn.addEventListener('click', function (){
-  window.location.href='/htmls/registrarse.html';
-})
 
 btns.forEach(function(btn){
 

@@ -9,36 +9,41 @@ var storageRef = firebase.storage().ref();
 var imagePaths = [];
 
 //Aqui es donde agregamos un producto
+
+
+
 const form = document.querySelector('.form');
-form.addEventListener('submit', function (event) {
-  event.preventDefault();
-
- 
-  const newProduct = {
-    name: form.name.value,
-    price: form.price.value,
-    img: form.image.value,
-    descrip: form.descrip.value,
-    category: form.category.value,
-    storageImgs: imagePaths,
-  };
-
-  productsRef // referencia de la colección
-  .add(newProduct) // cree un nuevo elemento en la colección
-  .then(function(docRef) {
-      console.log("Document written with ID: ", docRef.id);
-      getProducts();
-  })
-  .catch(function(error) {
-      console.error("Error adding document: ", error);
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+  
+   
+    const newProduct = {
+      name: form.name.value,
+      price: form.price.value,
+      img: form.image.value,
+      descrip: form.descrip.value,
+      category: form.category.value,
+      storageImgs: imagePaths,
+    };
+  
+    productsRef // referencia de la colección
+    .add(newProduct) // cree un nuevo elemento en la colección
+    .then(function(docRef) {
+        console.log("Document written with ID: ", docRef.id);
+        getProducts();
+    })
+    .catch(function(error) {
+        console.error("Error adding document: ", error);
+    });
   });
-});
+
+
 
 // creación de nuevos productos a partir de la lista
 function renderProducts (list) {
     productsList.innerHTML = '';
     list.forEach(function (elem) {
-      const newProduct = document.createElement('a');
+      const newProduct = document.createElement('article');
       newProduct.classList.add('product');
   
       const url = `detalles.html?${elem.id}-${elem.title}`;
@@ -109,7 +114,6 @@ function renderProducts (list) {
   });
 }
 
-
 function getProducts(){
     productsRef  // referencia de la colección
     .get() // pide todos los documentos de la colección
@@ -124,6 +128,8 @@ function getProducts(){
       renderProducts(objects);
     });
   }
+
+  
 
   const images = form.querySelectorAll('.form__imginput');
 images.forEach(function(group, index) {
