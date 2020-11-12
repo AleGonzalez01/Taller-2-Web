@@ -222,29 +222,49 @@ body {
           animation: 2s, ease-in-out;
 }
 
+.product__edit .product__car {
+  font-size: 18px;
+  width: 180px;
+  height: 50px;
+  border-radius: 15px;
+  font-family: "Questrial", sans-serif;
+  background-color: #F22C07;
+  color: white;
+  border-color: transparent;
+  -webkit-animation: 2s, ease-in;
+          animation: 2s, ease-in;
+  margin-right: 10px;
+}
+
+.product__edit .product__car:hover {
+  background-color: #F59402;
+  -webkit-animation: 2s, ease-in-out;
+          animation: 2s, ease-in-out;
+}
+
 @media screen and (max-width: 900px) {
-  .buttons {
+  .product__edit .buttons {
     font-size: 16px;
     width: 140px;
     height: 40px;
     border-radius: 10px;
   }
-  .buttons--border {
+  .product__edit .buttons--border {
     border-radius: 0px;
   }
-  .buttons--small {
+  .product__edit .buttons--small {
     margin-left: 170px;
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  .product__delete {
+  .product__edit .product__delete {
     font-size: 16px;
     width: 140px;
     height: 40px;
     border-radius: 10px;
     margin-bottom: 8px;
   }
-  .product__edit {
+  .product__edit .product__edit {
     font-size: 16px;
     width: 140px;
     height: 40px;
@@ -253,28 +273,28 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .buttons {
+  .product__edit .buttons {
     font-size: 10px;
     width: 100px;
     height: 30px;
     border-radius: 10px;
   }
-  .buttons--border {
+  .product__edit .buttons--border {
     border-radius: 0px;
   }
-  .buttons--small {
+  .product__edit .buttons--small {
     margin-left: 80px;
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  .product__delete {
+  .product__edit .product__delete {
     font-size: 10px;
     width: 100px;
     height: 30px;
     border-radius: 10px;
     margin-bottom: 5px;
   }
-  .product__edit {
+  .product__edit .product__edit {
     font-size: 10px;
     width: 100px;
     height: 30px;
@@ -1184,6 +1204,23 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.product__a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
 }
 
 .product__img {

@@ -46,10 +46,11 @@ function renderProducts (list) {
       const newProduct = document.createElement('article');
       newProduct.classList.add('product');
   
-      const url = `detalles.html?${elem.id}-${elem.title}`;
-    newProduct.setAttribute('href', url);
+      const url = `detalles.html?${elem.id}-${elem.name}`;
+    //newProduct.setAttribute('href', url);
     
       newProduct.innerHTML = `
+      <a class="product__a" href="${url}">
       <img class="product__img" src="${elem.img}" alt="">
       <div class="product__info">
         <h3 class="product__name">${elem.name}</h3>
@@ -57,6 +58,7 @@ function renderProducts (list) {
         <p class="product__descrip">${elem.descrip}</p>
         <p class="product__category">${elem.category}</p>
         </div>
+        </a>
         <div class="product__btns">
         <button class="product__delete hidden showadmin">Eliminar</button>
       <button class="product__edit hidden showadmin">Editar</button>

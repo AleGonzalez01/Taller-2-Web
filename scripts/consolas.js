@@ -12,16 +12,21 @@
           const newProduct = document.createElement('article');
           newProduct.classList.add('product');
       
-          const url = `detalles.html?${elem.id}-${elem.title}`;
-        newProduct.setAttribute('href', url);
+          const url = `detalles.html?${elem.id}-${elem.name}`;
+       // newProduct.setAttribute('href', url);
         
           newProduct.innerHTML = `
+          <a class="product__a" href="${url}">
           <img class="product__img" src="${elem.img}" alt="">
           <div class="product__info">
             <h3 class="product__name">${elem.name}</h3>
             <p class="product__price">$ ${elem.price}</p>
             </div>
-            
+            </a>
+            <div class="product__btns">
+            <button class="buttons product__car">Agregar al carrito</button>
+          </div>
+
           
           `;
     
@@ -37,8 +42,19 @@
             })
           }
         productsList.appendChild(newProduct);
+
+        const carbtn = newProduct.querySelector('.product__car');
+        carbtn.addEventListener('click',function(){
+    
+          //Va el carritoooo
+    
+        });
       });
+
+
+     
     }
+    
     
 
 let objectsList = [];
