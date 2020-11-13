@@ -1055,14 +1055,36 @@ body {
   text-align: left;
   font-family: "Questrial", sans-serif;
   font-size: 18px;
-  padding: 15px;
+  padding-left: 15px;
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .info__filter {
   text-align: left;
   font-family: "Questrial", sans-serif;
   font-size: 18px;
-  padding: 15px;
+  padding-left: 15px;
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .info__a {
@@ -1077,6 +1099,15 @@ body {
 
 .info__a:hover {
   color: #F22C07;
+}
+
+.filter__name {
+  width: 30px;
+  padding-left: 15px;
+}
+
+.filter__large {
+  width: 300px;
 }
 
 .admin {
@@ -1392,5 +1423,93 @@ input {
   color: white;
   text-decoration: none;
   font-family: "Questrial", sans-serif;
+}
+
+.details {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #1D1D1D;
+}
+
+.details__image {
+  margin-top: 50px;
+  background-color: #141414;
+  width: 70%;
+}
+
+.details__info {
+  margin-top: 50px;
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.details__title {
+  margin-top: 100px;
+  color: white;
+  font-size: 36px;
+  font-family: "Questrial", sans-serif;
+  text-align: center;
+}
+
+.details__price {
+  color: white;
+  font-size: 32px;
+  font-family: "Questrial", sans-serif;
+  text-align: center;
+}
+
+.details__text {
+  margin: 40px;
+  color: white;
+  font-size: 16px;
+  font-family: "Questrial", sans-serif;
+  text-align: center;
+}
+
+.details__det {
+  padding-top: 100px;
+  margin-left: 100px;
+  color: white;
+  font-size: 36px;
+  font-family: "Questrial", sans-serif;
+}
+
+.details__cont {
+  background-color: #1D1D1D;
+}
+
+.details__descri {
+  margin: 40px;
+  color: white;
+  font-size: 16px;
+  font-family: "Questrial", sans-serif;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.imageproduct {
+  margin: 20px;
+  width: 90%;
 }
 /*# sourceMappingURL=main.css.map */

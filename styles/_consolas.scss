@@ -31,14 +31,25 @@
         text-align: left;
         font-family: $font;
         font-size: 18px;
-        padding: 15px;
+        padding-left: 15px;
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
     }
     &__filter{
         text-align: left;
         font-family: $font;
         font-size: 18px;
-        padding: 15px;
+        padding-left: 15px;
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        
+   
     }
 
     &__a{
@@ -54,6 +65,13 @@
             color:$red;
         }
     }
+}
 
+.filter__name{
+    width: 30px;
+    padding-left: 15px;
+}
 
+.filter__large{
+    width: 300px;
 }

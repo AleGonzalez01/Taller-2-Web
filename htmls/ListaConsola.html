@@ -46,7 +46,7 @@
             <form class="filterform">
               <label class="info__ordenar">
                 Ordenar:
-                <select name="order">
+                <select class="filter__large"  name="order">
                   <option value="">Selecciona una opción</option>
                   <option value="price_asc">Precio mayor a menor</option>
                   <option value="price_desc">Precio menor a mayor</option>
@@ -55,22 +55,22 @@
               </label>
         
               <h4 class="info__filter">Filtrar:</h4>
-              <label>
-                <input type="radio" name="name" value="" checked>
+              <label >
+                <input class="filter__name" type="radio" name="name" value="" checked>
                 Todos
               </label>
               <label>
-                <input type="radio" name="name" value="nintendo">
+                <input class="filter__name" type="radio" name="name" value="nintendo">
                 Nintendo
               </label>
               <label>
-                <input type="radio" name="name" value="mario">
+                <input class="filter__name" type="radio" name="name" value="mario">
                 Mario
               </label>
               <br>
               <label class="info__filter">
                 Productos mayores a:
-                <input type="number" name="price">
+                <input class="filter__large"  type="number" name="price">
               </label>
             </form>
           </aside>

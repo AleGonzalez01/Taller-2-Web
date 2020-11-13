@@ -21,6 +21,9 @@ window.addEventListener('load', function () {
   
       const name = document.querySelector('h1');
       name.innerText = product.name;
+
+      const detail = document.querySelector('p');
+      detail.innerText = product.descrip;
   
      const image = document.querySelector('.imageproduct');
      image.setAttribute('src', product.img);
