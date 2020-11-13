@@ -22,6 +22,7 @@ firebase.auth().onAuthStateChanged(function(user) {
           const data = doc.data();
           userInfo = data;
           authProfileSpan.innerText = data.firstname;
+          authProfileSpan.style.cssText = "text-decoration: none;";
         
           
           if(data.admin) {

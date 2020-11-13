@@ -42,13 +42,38 @@
     <div class="info__cont">
         <h2 class="info__titlenav">Sólo productos originales</h2>
         <h2 class="info__envios">Envíos a todo el país</h2>
-        <h2 class="info__ordenar">Ordenar:</h2>
-        <a class="info__a" href="">Juegos Nuevos</a>
-        <a class="info__a" href="">A-Z</a>
-        <a class="info__a" href="">Z-A</a>
-        <h2 class="info__filter">Filtrar:</h2>
-        <a class="info__a" href="">Precio menor a 600.000</a>
-        <a class="info__a" href="">Precio mayor a 600.000</a>
+        <aside>
+            <form class="filterform">
+              <label class="info__ordenar">
+                Ordenar:
+                <select name="order">
+                  <option value="">Selecciona una opción</option>
+                  <option value="price_asc">Precio mayor a menor</option>
+                  <option value="price_desc">Precio menor a mayor</option>
+                  <option value="price_alpha">A-Z</option>
+                </select>
+              </label>
+        
+              <h4 class="info__filter">Filtrar:</h4>
+              <label>
+                <input type="radio" name="name" value="" checked>
+                Todos
+              </label>
+              <label>
+                <input type="radio" name="name" value="nintendo">
+                Nintendo
+              </label>
+              <label>
+                <input type="radio" name="name" value="mario">
+                Mario
+              </label>
+              <br>
+              <label class="info__filter">
+                Productos mayores a:
+                <input type="number" name="price">
+              </label>
+            </form>
+          </aside>
     </div>
     <div>        
     </div>
