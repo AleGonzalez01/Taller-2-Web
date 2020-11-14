@@ -1,0 +1,11 @@
+.car{
+    background-color: $black;
+    display: flex;
+    flex-direction: row ;
+    justify-content: center;
+
+
+    &__btn{
+        width: 20%;
+    }
+}

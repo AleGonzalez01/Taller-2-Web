@@ -1425,6 +1425,10 @@ input {
   font-family: "Questrial", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .details {
   width: 100%;
   display: -webkit-box;
@@ -1570,5 +1574,23 @@ input {
   font-size: 32px;
   color: white;
   font-family: "Questrial", sans-serif;
+}
+
+.car {
+  background-color: #141414;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.car__btn {
+  width: 20%;
 }
 /*# sourceMappingURL=main.css.map */
