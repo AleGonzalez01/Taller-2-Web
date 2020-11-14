@@ -1504,12 +1504,71 @@ input {
   color: white;
   font-size: 16px;
   font-family: "Questrial", sans-serif;
-  text-align: center;
   padding-bottom: 100px;
 }
 
 .imageproduct {
   margin: 20px;
   width: 90%;
+  background-size: cover;
+}
+
+.perfil {
+  background-color: #1D1D1D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.perfil__cont {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  width: 40%;
+  color: #1D1D1D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.perfil__info {
+  color: white;
+  text-align: right;
+  font-family: "Questrial", sans-serif;
+  font-size: 18px;
+  padding: 15px;
+}
+
+.perfil__image {
+  width: 50%;
+}
+
+.perfil__title {
+  color: white;
+  text-align: right;
+  font-family: "Questrial", sans-serif;
+  font-size: 24px;
+  padding: 15px;
+}
+
+.perfil__span {
+  text-align: right;
+  padding-right: 10px;
+  font-size: 32px;
+  color: white;
+  font-family: "Questrial", sans-serif;
 }
 /*# sourceMappingURL=main.css.map */

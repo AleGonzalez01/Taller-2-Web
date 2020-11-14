@@ -1,0 +1,46 @@
+.perfil{
+    background-color: $gray;
+    display: flex;
+    flex-direction: row;
+   
+
+    &__cont{
+        margin-top: 150px;
+        margin-bottom: 150px;
+        width: 40%;
+        color: $gray;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__info{
+        color: $white;
+        text-align: right;
+        font-family: $font;
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    &__image{
+        width: 50%;
+    }
+
+    &__title{
+
+        color: $white;
+        text-align: right;
+        font-family: $font;
+        font-size: 24px;
+        padding: 15px;
+    }
+
+    &__span{
+        text-align: right;
+        padding-right: 10px;
+        font-size:  32px;
+        color: $white;
+        font-family: $font;
+    }
+}
