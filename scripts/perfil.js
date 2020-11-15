@@ -14,7 +14,19 @@ firebase.auth().onAuthStateChanged(function(user) {
           userInfo = data;
           name.innerText = data.firstname;
           info.innerText=data.email;
+        
+
+        if(data.admin) {
+          const showAdmin = document.querySelector('.showadmin');
+          showAdmin.classList.remove('hidden');
+
+          showAdmin.addEventListener("click", function() {
+            window.location.href='/htmls/admin.html';
+          });
+
+        
         }
+      }
     });
 }
 });
