@@ -1448,6 +1448,13 @@ a {
   margin-top: 50px;
   background-color: #141414;
   width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .details__info {
@@ -1511,9 +1518,21 @@ a {
   padding-bottom: 100px;
 }
 
+.details__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+  background-size: cover;
+}
+
 .imageproduct {
   margin: 20px;
-  width: 90%;
+  width: 70%;
   background-size: cover;
 }
 

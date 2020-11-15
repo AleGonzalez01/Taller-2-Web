@@ -104,6 +104,7 @@ function renderProducts (list) {
       form.image.value = elem.img;
       form.price.value = elem.price;
       form.descrip.value = elem.descrip;
+      form.category.value = elem.value;
       selectedItem = elem;
     });
 

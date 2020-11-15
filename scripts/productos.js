@@ -11,21 +11,58 @@ window.addEventListener('load', function () {
     const db = firebase.firestore();
     // referencia a la coleción productos
     const productsRef = db.collection('products');
-  
+    var storageRef = firebase.storage().ref();
+
     //referencia al producto con el uid específico
     productsRef.doc(uid)
     .get() // traer info de ese producto
     .then(function (snapshot) {
   
       const product = snapshot.data();
-  
+      const img1 = document.querySelector('.details__images1');
+        const img2 = document.querySelector('.details__images2');
+        const img3 = document.querySelector('.details__images3');
+        const thumbs = document.querySelectorAll('.details__images img');
+        const image = document.querySelector('.imageproduct');
+
+        if (product.storageImgs && product.storageImgs.length > 0) {
+          storageRef.child(product.storageImgs[0]).getDownloadURL().then(function (url) {
+              img1.src = url;
+              image.src = url;
+          }).catch(function (error) {
+              // Handle any errors
+          });
+
+          storageRef.child(product.storageImgs[1]).getDownloadURL().then(function (url) {
+            img2.src = url;
+        }).catch(function (error) {
+            // Handle any errors
+        });
+
+        storageRef.child(product.storageImgs[2]).getDownloadURL().then(function (url) {
+            img3.src = url;
+        }).catch(function (error) {
+            // Handle any errors
+        });
+    }
+
+    function galleryHandle(event) {
+      const src = event.target.getAttribute('src');
+      image.setAttribute('src', src);
+  }
+
+  thumbs.forEach(function (elem, index) {
+    elem.addEventListener('click', galleryHandle);
+});
+
+
       const name = document.querySelector('h1');
       name.innerText = product.name;
 
       const detail = document.querySelector('p');
       detail.innerText = product.descrip;
   
-     const image = document.querySelector('.imageproduct');
+    
      image.setAttribute('src', product.img);
       document.querySelector('h2 span').innerText = product.price;
   
