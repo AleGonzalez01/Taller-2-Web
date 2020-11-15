@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+    <title>CheckOut</title>
+
+    
+    <link  rel="icon"   href="../imagenes/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href = "https://fonts.googleapis.com/css2? family = Questrial & display = swap" rel = "stylesheet">
+</head>
+<body>
+
+    <header class="navegation">
+        <img class="navegation__image" src="../imagenes/Logo.png" alt="Logo de MammaMia">
+        
+        <nav class="navegation__sections">
+            <a class= "navegation__a" href="../htmls/ListaConsola.html">Consola</a>
+            <a class= "navegation__a" href="../htmls/ListaJuegos.html">Juegos</a>
+            <a class= "navegation__a" href="../htmls/ListaAccesorios.html">Accesorios</a>
+            <button class="buttons buttons--small">Registrarse</button>
+        </nav>
+    </header>
+
+    <div class="admin ">  
+        <div class="admin__container">
+    <div class="admin__info">
+
+        <form class="form form__margin ">
+
+            <label class="form__label margin" >
+                 Nombre   
+              <input name="name" type="text">
+            </label>
+
+            <label class="form__label margin"   >
+                Cédula
+                <input name="dni" type="text">
+              </label>
+        
+            <label class="form__label margin">
+              Correo
+              <input name="email" type="text">
+            </label>
+
+            <label class="form__label margin">
+                Dirección
+                <input name="direction" type="text">
+              </label>
+
+            <h2 class="admin__title">Seleccione el método de pago</h2>
+            <select class="admin__category" name="method" >
+                <option value="Ninguna">Ninguno</option>
+                <option value="PayPal">Consolas</option>
+                <option value="Efecty">Juegos</option>
+                <option value="Bancolombia">Accesorios</option>
+
+            </select>
+        
+            <div class="admin__accion">
+                <button class="buttons">
+                    Comprar
+                  </button>
+
+            </div>
+            
+          </form>
+        </div>
+    </div>      
+        </div>
+    
+</body>
+</html>
