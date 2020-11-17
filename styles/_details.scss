@@ -67,10 +67,23 @@
     }
 
     &__images{
+
         display: flex;
         flex-direction: column;
         width: 30%;
         background-size: cover;
+    }
+    &__images1{
+        padding: 20px;
+    }
+    &__images2{
+        padding: 20px;
+
+    }
+    &__images3{
+        padding: 20px;
+
+
     }
 
   

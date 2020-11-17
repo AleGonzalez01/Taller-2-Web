@@ -1530,6 +1530,18 @@ a {
   background-size: cover;
 }
 
+.details__images1 {
+  padding: 20px;
+}
+
+.details__images2 {
+  padding: 20px;
+}
+
+.details__images3 {
+  padding: 20px;
+}
+
 .imageproduct {
   margin: 20px;
   width: 70%;

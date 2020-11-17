@@ -29,6 +29,7 @@
 
           
           `;
+          
     
           if(elem.storageImgs) {
             elem.storageImgs.forEach(function(imageRef) {
