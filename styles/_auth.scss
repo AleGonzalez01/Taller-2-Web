@@ -30,3 +30,23 @@
 a{
     text-decoration: none;
 }
+
+@media screen and (max-width: 600px) {
+
+.auth{
+    &__profile span{
+        font-size:  14px;
+    }
+
+    &__image{
+        width: 20%;
+        padding-right: 10px;
+    }
+
+    &__signout{
+        font-size:  14px;
+ 
+    }
+}
+
+}

@@ -55,7 +55,14 @@
         width: 300px;
     }
 
-    
-
 }
+@media screen and (max-width: 600px) {
+    .admin{
+    
+        &__container{
+            width: 90%;
+           
+        }
+    }
+    }
 

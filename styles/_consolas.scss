@@ -75,3 +75,109 @@
 .filter__large{
     width: 300px;
 }
+
+@media screen and (max-width: 900px) {
+    .info{
+    
+        &__cont{
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 150px;
+            margin-bottom: 150px;
+            width: 30%;
+        }
+    
+        &__titlenav{
+            font-size: 14px;
+            padding: 10px;
+        }
+        &__envios{
+            font-size: 14px;
+            padding: 10px;
+    
+        }
+        &__ordenar{
+            font-size: 14px;
+            padding-left: 10px;
+            padding-top: 20px;
+    
+        }
+        &__filter{
+            font-size: 14px;
+            padding-left: 10px;
+            padding-top: 20px; 
+        }
+    
+        &__a{
+            font-size:  14px;
+            padding: 10px;
+            &:hover{
+                color:$red;
+            }
+        }
+    }
+    
+    .filter__name{
+        width: 25px;
+        padding-left: 10px;
+    }
+    
+    .filter__large{
+        width: 250px;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .info{
+    
+        flex-direction: column;
+
+        &__cont{
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            width: 100%;
+        }
+    
+        &__titlenav{
+            font-size: 14px;
+            padding: 10px;
+        }
+        &__envios{
+            font-size: 14px;
+            padding: 10px;
+    
+        }
+        &__ordenar{
+            font-size: 14px;
+            padding-left: 10px;
+            padding-top: 20px;
+    
+        }
+        &__filter{
+            font-size: 14px;
+            padding-left: 10px;
+            padding-top: 20px; 
+        }
+    
+        &__a{
+            font-size:  14px;
+            padding: 10px;
+            &:hover{
+                color:$red;
+            }
+        }
+    }
+    
+    .filter__name{
+        width: 25px;
+        padding-left: 10px;
+    }
+    
+    .filter__large{
+        width: 250px;
+    }
+    
+}
