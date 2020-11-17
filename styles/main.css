@@ -1607,7 +1607,8 @@ a {
   font-family: "Questrial", sans-serif;
 }
 
-.car {
+.order__cont {
+  margin-left: 50px;
   background-color: #141414;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1616,12 +1617,111 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
+.order__info {
+  margin-left: 10px;
+  margin: 40px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.order__name {
+  text-align: left;
+  font-family: "Questrial", sans-serif;
+  font-size: 26px;
+  padding: 10px;
+}
+
+.car {
+  background-color: #141414;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .car__btn {
   width: 20%;
+  margin: 100px;
+}
+
+.car__cont {
+  width: 90%;
+  background-color: #141414;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.car__info {
+  margin-left: 50px;
+  width: 60%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.car__name {
+  text-align: left;
+  font-family: "Questrial", sans-serif;
+  font-size: 26px;
+  padding: 10px;
+}
+
+.car__price {
+  text-align: left;
+  font-family: "Questrial", sans-serif;
+  font-size: 32px;
+  padding: 10px;
+}
+
+.car__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.product__priceTotal {
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */

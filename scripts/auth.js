@@ -21,8 +21,21 @@ firebase.auth().onAuthStateChanged(function(user) {
         if(doc.exists) {
           const data = doc.data();
           userInfo = data;
+          userInfo.uid = user.uid;
           authProfileSpan.innerText = data.firstname;
         
+          if(window.getCarProducts){
+            getCarProducts ();
+          }
+          
+          if(window.getOrders){
+            getOrders();
+          }
+
+          if(window.getTotals){
+            getTotals();
+          }
+
           
           if(data.admin) {
             const showAdmin = document.querySelectorAll('.showadmin');

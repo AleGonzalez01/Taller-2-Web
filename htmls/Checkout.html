@@ -23,12 +23,26 @@
             <button class="buttons buttons--small">Registrarse</button>
         </nav>
     </header>
+    <div class="auth">
+      <div class="auth__without hidden">
+      </div>
+      <div class="auth__with hidden">
+        <a href="../htmls/perfil.html" class="auth__profile">
+          <img src="../imagenes/perfil.png" alt="">
+          <span></span>
+        </a>
+        <a href="../htmls/carro.html" ><img class="auth__image" src="../imagenes/carrito.png" alt="" > </a>
+        <a href="#" class="auth__signout">
+          Cerrar sesión
+        </a>
+      </div>
+    </div>
 
     <div class="admin ">  
         <div class="admin__container">
     <div class="admin__info">
 
-        <form class="form form__margin ">
+        <form class="form form__margin check">
 
             <label class="form__label margin" >
                  Nombre   
@@ -37,7 +51,7 @@
 
             <label class="form__label margin"   >
                 Cédula
-                <input name="dni" type="text">
+                <input name="dni" type="number">
               </label>
         
             <label class="form__label margin">
@@ -51,16 +65,16 @@
               </label>
 
             <h2 class="admin__title">Seleccione el método de pago</h2>
-            <select class="admin__category" name="method" >
+            <select class="admin__category" name="method">
                 <option value="Ninguna">Ninguno</option>
-                <option value="PayPal">Consolas</option>
-                <option value="Efecty">Juegos</option>
-                <option value="Bancolombia">Accesorios</option>
+                <option value="PayPal">PayPal</option>
+                <option value="Efecty">Efecty</option>
+                <option value="Bancolombia">Bancolombia</option>
 
             </select>
         
             <div class="admin__accion">
-                <button class="buttons">
+                <button class="buttons btn__action">
                     Comprar
                   </button>
 
@@ -76,8 +90,10 @@
         <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-storage.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
         <script src="../scripts/firebase.js"></script>
-        <script src="../scripts/productos.js"></script>
+        <script src="../scripts/checkout.js"></script>
         <script src="../scripts/navegation.js"></script>
+        <script src="../scripts/auth.js"></script>
+        
     
 </body>
 </html>

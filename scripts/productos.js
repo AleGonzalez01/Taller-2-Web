@@ -10,6 +10,10 @@ window.addEventListener('load', function () {
  const db = firebase.firestore();
  // referencia a la coleción productos
  const productsRef = db.collection('products');
+ const carFeo = db.collection('car');
+
+   
+ let arregloFeo = [];
  var storageRef = firebase.storage().ref();
 
 
@@ -69,7 +73,43 @@ window.addEventListener('load', function () {
 
       const agregar = document.querySelector('.details__btn');
 
+      
+      function carList(feo){
+        arregloFeo=feo;
+        if(userInfo){
+          const shopcar ={
+            name: product.name,
+            price: Number(product.price)
+          }
+          arregloFeo.push(shopcar);
+          shopcar2= {
+            productos:arregloFeo
+          }
+          carFeo.doc(userInfo.uid).set(shopcar2).catch(function(error){
+            console.log("hola: ", error);
+          });
+        }
 
+      }
+
+      function getCar(){
+        carFeo.doc(userInfo.uid).get().then((doc)=> {
+          if(doc.exists && doc.data().productos != undefined){
+            arregloFeo= doc.data().productos;
+            shopcar2=doc.data().productos;
+            carList(arregloFeo);
+          }else if(doc.exists && doc.data().productos != undefined){
+            carList(arregloFeo);
+          }else if(!doc.exists){
+            carList(arregloFeo);
+          }
+        })
+      }
+
+      agregar.addEventListener('click',function(){
+        getCar();
+  
+      });
     });
 
 });

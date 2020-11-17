@@ -44,3 +44,29 @@
         font-family: $font;
     }
 }
+
+.order__cont{
+    margin-left: 50px;
+    background-color: $black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.order__info{
+    margin-left: 10px;
+    margin: 40px;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+}
+
+.order__name{
+    text-align: left;
+    font-family: $font;
+    font-size: 26px;
+    padding: 10px;
+}
+

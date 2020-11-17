@@ -1,10 +1,13 @@
     const db = firebase.firestore();
 
     const productsRef = db.collection('products');
+    const carFeo = db.collection('car');
 
     const productsList = document.querySelector('.productslist');
 
-    var storageRef = firebase.storage().ref();
+    var storageRef = firebase.storage().ref()
+    
+    let arregloFeo = [];
     
     function renderProducts (list) {
         productsList.innerHTML = '';
@@ -42,14 +45,49 @@
               });
             })
           }
-        productsList.appendChild(newProduct);
+
+         
 
         const carbtn = newProduct.querySelector('.product__car');
+
+        function carList(feo){
+          arregloFeo=feo;
+          if(userInfo){
+            const shopcar ={
+              name: elem.name,
+              price: Number(elem.price)
+            }
+            arregloFeo.push(shopcar);
+            shopcar2= {
+              productos:arregloFeo
+            }
+            carFeo.doc(userInfo.uid).set(shopcar2).catch(function(error){
+              console.log("hola: ", error);
+            });
+          }
+
+        }
+
+        function getCar(){
+          carFeo.doc(userInfo.uid).get().then((doc)=> {
+            if(doc.exists && doc.data().productos != undefined){
+              arregloFeo= doc.data().productos;
+              shopcar2=doc.data().productos;
+              carList(arregloFeo);
+            }else if(doc.exists && doc.data().productos != undefined){
+              carList(arregloFeo);
+            }else if(!doc.exists){
+              carList(arregloFeo);
+            }
+          })
+        }
+
         carbtn.addEventListener('click',function(){
-    
-          //Va el carritoooo
+          getCar();
     
         });
+
+        productsList.appendChild(newProduct);
       });
 
 
