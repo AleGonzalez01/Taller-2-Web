@@ -6,5 +6,5 @@ logo.addEventListener('click', function (){
   })
   
   btn.addEventListener('click', function (){
-    window.location.href='./htmls/registrarse.html';
+    window.location.href='/Taller-2-Web/htmls/registrarse.html';
   })
