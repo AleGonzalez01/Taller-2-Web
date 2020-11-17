@@ -69,5 +69,5 @@ function getCarProducts() {
 const comprarUno = document.querySelector('.btn__comprar');
 
 comprarUno.addEventListener("click", function(event){
-  window.location.href="checkout.html"
+  window.location.href="Taller-2-Web/htmls/checkout.html"
 });

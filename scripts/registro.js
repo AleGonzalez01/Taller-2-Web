@@ -22,7 +22,7 @@ register.addEventListener('submit', function (event) {
       email: email,
     })
     .then(function () {
-      window.location.href = '../index.html';
+      window.location.href = 'Taller-2-Web';
     });
 
   })

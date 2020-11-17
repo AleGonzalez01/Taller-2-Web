@@ -21,7 +21,7 @@ firebase.auth().onAuthStateChanged(function(user) {
           showAdmin.classList.remove('hidden');
 
           showAdmin.addEventListener("click", function() {
-            window.location.href='/htmls/admin.html';
+            window.location.href='Taller-2-Web/htmls/admin.html';
           });
 
         
