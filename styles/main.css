@@ -2086,6 +2086,25 @@ __info {
   height: 1px;
 }
 
+.interactionPo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.interactionPo__title {
+  width: 100%;
+  color: white;
+  font-size: 32px;
+  font-family: "Questrial", sans-serif;
+  text-align: center;
+  padding-top: 50px;
+}
+
 :root {
   --background-white: #fffffd;
   --background-blue: #141414;
@@ -2415,6 +2434,9 @@ span.flying {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .interactionPo__title {
+    font-size: 24px;
   }
 }
 

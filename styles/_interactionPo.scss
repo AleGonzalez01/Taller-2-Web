@@ -7,6 +7,20 @@
   height: 1px;
 }
 
+.interactionPo{
+  display:flex;
+  flex-direction: column;
+
+  &__title{
+      width: 100%;
+      color: $white;
+      font-size:32px;
+      font-family: $font;
+      text-align: center;
+      padding-top: 50px;
+  }
+}
+
 :root {
   --background-white: #fffffd;
   --background-blue: #141414;
@@ -304,6 +318,13 @@ span.flying {
       }
     .contPokemon {
         flex-direction: column;
+      }
+
+      .interactionPo{
+        &__title{
+            font-size:24px;
+  
+        }
       }
 
   }
