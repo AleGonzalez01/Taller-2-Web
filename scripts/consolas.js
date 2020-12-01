@@ -84,8 +84,9 @@
 
         carbtn.addEventListener('click',function(){
           getCar();
-    
         });
+
+        
 
         productsList.appendChild(newProduct);
       });

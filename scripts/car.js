@@ -38,14 +38,7 @@ function renderCarProducts(list) {
     const deleteButton = newCarProduct.querySelector('.detele__car');
     deleteButton.addEventListener('click', function () {
 
-    carRef.doc(userInfo.uid).get().then((doc) => {
-        if (doc.exists) {
-          doc.data().productos.then(function () {
-            console.log("Document successfully deleted!");
-            getCarProducts();
-          });
-        }
-      });
+    
     });
 
     productsCarList.appendChild(newCarProduct);
