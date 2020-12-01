@@ -2393,4 +2393,28 @@ span.flying {
 .summon {
   position: absolute;
 }
+
+@media only screen and (min-width: 765px) {
+  .pokeball {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .pokeball {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  .pokemon {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .contPokemon {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 /*# sourceMappingURL=main.css.map */

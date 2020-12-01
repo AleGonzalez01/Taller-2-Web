@@ -285,3 +285,25 @@ span.flying {
 .summon {
   position: absolute;
 }
+
+@media only screen and (min-width: 765px) {
+    .pokeball {
+      transform: scale(0.8)
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .pokeball {
+      transform: scale(0.6)
+    }
+    .pokemon {
+        transform: scale(0.8)
+    
+    
+
+      }
+    .contPokemon {
+        flex-direction: column;
+      }
+
+  }
