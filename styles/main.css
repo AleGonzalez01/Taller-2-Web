@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
 body {
   margin: 0;
 }
@@ -2127,7 +2126,7 @@ __info {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: var(--background-blue);
-  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-family: "Questrial", sans-serif;
 }
 
 .pokeball {
@@ -2440,7 +2439,7 @@ span.flying {
   }
 }
 
-body {
+.calification {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2450,7 +2449,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
   background-color: #141414;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -2458,13 +2456,13 @@ body {
           flex-direction: column;
 }
 
-.rating {
-  margin: 10px;
-  width: 50%;
+.rating__h1 {
+  width: 100%;
   color: white;
-  font-size: 24px;
+  font-size: 32px;
   font-family: "Questrial", sans-serif;
   text-align: center;
+  padding-top: 50px;
 }
 
 .container {
@@ -2533,14 +2531,14 @@ body {
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23d8b11e' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
 }
 
-img {
+.img__rating {
   width: 46%;
 }
 
 .emoji-wrapper {
   width: 100%;
   text-align: center;
-  height: 100px;
+  height: 110px;
   overflow: hidden;
   position: absolute;
   top: 0;
@@ -2559,14 +2557,14 @@ img {
 
 .emoji-wrapper:before {
   top: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#1d1d1d), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(to bottom, #1d1d1d 0% #1d1d1d 35%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#1d1d1d), color-stop(35%, #1d1d1d), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to bottom, #1d1d1d 0%, #1d1d1d 35%, rgba(255, 255, 255, 0) 100%);
 }
 
 .emoji-wrapper:after {
   bottom: 0;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgbargba(29, 29, 29, 1)), color-stop(35%, #1d1d1d), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(to top, rgbargba(29, 29, 29, 1) 0%, #1d1d1d 35%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#1d1d1d), color-stop(35%, #1d1d1d), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to top, #1d1d1d 0%, #1d1d1d 35%, rgba(255, 255, 255, 0) 100%);
 }
 
 .emoji {
@@ -2585,28 +2583,28 @@ img {
 }
 
 #rating-1:checked ~ .emoji-wrapper > .emoji {
-  -webkit-transform: translateY(-105px);
-          transform: translateY(-105px);
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
 }
 
 #rating-2:checked ~ .emoji-wrapper > .emoji {
-  -webkit-transform: translateY(-210px);
-          transform: translateY(-210px);
+  -webkit-transform: translateY(-205px);
+          transform: translateY(-205px);
 }
 
 #rating-3:checked ~ .emoji-wrapper > .emoji {
-  -webkit-transform: translateY(-318px);
-          transform: translateY(-318px);
+  -webkit-transform: translateY(-310px);
+          transform: translateY(-310px);
 }
 
 #rating-4:checked ~ .emoji-wrapper > .emoji {
-  -webkit-transform: translateY(-418px);
-          transform: translateY(-418px);
+  -webkit-transform: translateY(-410px);
+          transform: translateY(-410px);
 }
 
 #rating-5:checked ~ .emoji-wrapper > .emoji {
-  -webkit-transform: translateY(-525px);
-          transform: translateY(-525px);
+  -webkit-transform: translateY(-515px);
+          transform: translateY(-515px);
 }
 
 .feedback {
@@ -2629,5 +2627,7 @@ img {
           align-items: center;
   -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
           box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 /*# sourceMappingURL=main.css.map */

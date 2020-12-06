@@ -11,48 +11,106 @@
     <link href = "https://fonts.googleapis.com/css2? family = Questrial & display = swap" rel = "stylesheet">
 </head>
 <body>
-    <h1 class="rating">Califica la página</h1>
-    <div class="feedback">
-        <div class="rating">
-          <input type="radio" name="rating" id="rating-5">
-          <label for="rating-5"></label>
-          <input type="radio" name="rating" id="rating-4">
-          <label for="rating-4"></label>
-          <input type="radio" name="rating" id="rating-3">
-          <label for="rating-3"></label>
-          <input type="radio" name="rating" id="rating-2">
-          <label for="rating-2"></label>
-          <input type="radio" name="rating" id="rating-1">
-          <label for="rating-1"></label>
-          
-          <div class="emoji-wrapper">
-            <div class="emoji">
-              <div class="rating-0">
-                <img src="../imagenes/cero.png" alt="">
-              </div>
-              <div class="rating-1">
-                <img src="../imagenes/uno.png" alt="">
-              </div>
-              <div class="rating-2">
-                <img src="../imagenes/dos.png" alt="">
-              </div>
-              <div class="rating-3">
-                <img src="../imagenes/tres.png" alt="">
-              </div>
-              <div class="rating-4">
-                <img src="../imagenes/cuatro.png" alt="">
-              </div>
-              <div class="rating-5">
-                <img src="../imagenes/cinco.png" alt="">
-              </div>
-              
-            </div>
+
+  <header class="navegation">
+    <img class="navegation__image" src="../imagenes/Logo.png" alt="Logo de MammaMia">
+    
+    <nav class="navegation__sections">
+        <a class= "navegation__a" href="../htmls/ListaConsola.html">Consola</a>
+        <a class= "navegation__a" href="../htmls/ListaJuegos.html">Juegos</a>
+        <a class= "navegation__a" href="../htmls/ListaAccesorios.html">Accesorios</a>
+        <button class="buttons buttons--small">Registrarse</button>
+    </nav>
+</header>
+
+<div class="auth">
+  <div class="auth__without hidden">
+  </div>
+  <div class="auth__with hidden">
+    <a href="../htmls/perfil.html" class="auth__profile">
+      <img src="../imagenes/perfil.png" alt="">
+      <span></span>
+    </a>
+    <a href="../htmls/carro.html" ><img class="auth__image" src="../imagenes/carrito.png" alt="" > </a>
+    <a href="#" class="auth__signout">
+      Cerrar sesión
+    </a>
+  </div>
+</div>
+
+
+<div class="calification">
+  <h1 class="rating__h1">Califica la página</h1>
+  <div class="feedback">
+    <div class="rating">
+      <input type="radio" name="rating" id="rating-5">
+      <label for="rating-5"></label>
+      <input type="radio" name="rating" id="rating-4">
+      <label for="rating-4"></label>
+      <input type="radio" name="rating" id="rating-3">
+      <label for="rating-3"></label>
+      <input type="radio" name="rating" id="rating-2">
+      <label for="rating-2"></label>
+      <input type="radio" name="rating" id="rating-1">
+      <label for="rating-1"></label>
+      <div class="emoji-wrapper">
+        <div class="emoji">
+          <div class="rating-0">
+            <img class="img__rating" src="../imagenes/cero.png" alt="">
           </div>
+          <div class="rating-1">
+            <img class="img__rating" src="../imagenes/uno.png" alt="">
+          </div>
+          <div class="rating-2">
+            <img class="img__rating" src="../imagenes/dos.png" alt="">
+          </div>
+          <div class="rating-3">
+            <img class="img__rating" src="../imagenes/tres.png" alt="">
+          </div>
+          <div class="rating-4">
+            <img class="img__rating" src="../imagenes/cuatro.png" alt="">
+          </div>
+          <div class="rating-5">
+            <img class="img__rating" src="../imagenes/cinco.png" alt="">
+          </div>
+          
         </div>
       </div>
     </div>
+  </div>
+
+</div>
+ 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script> 
+    <footer class="footer">
+      <section class="footer__sections">
+          <h3 class="footer__titles"> <strong>Contáctanos en redes</strong></h3>
+          <div class="footer__image"> </div>
+      </section>
+      <section class="footer__sections">
+          <h3 class="footer__titles"><strong>Información</strong></h3>
+          <a class="footer__a" href=""> Sobre nosotros</a>
+          <a class="footer__a" href="">Suscríbete</a>
+      </section>
+      <section class="footer__sections">
+          <div class="footer__logo"></div>
+          <a class="footer__a" href="">Términos de uso</a>
+          <a class="footer__a" href="">Privacidad y Seguridad</a>
+          <a class="footer__a" href="">Políticas de ventas</a>
+      </section>
+
+  </footer>
+
+
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-storage.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script> 
+  <script src="../scripts/firebase.js"></script>
+  <script src="../scripts/navegation.js"></script>
+  <script src="../scripts/auth.js"></script>
+
 </body>
 </html>

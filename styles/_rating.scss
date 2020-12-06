@@ -1,21 +1,20 @@
 
-body{
+.calification{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
 	background-color:$black;
 	flex-direction: column;
 }
-
-.rating{
-	margin:10px;
-	width: 50%;
+.rating__h1{
+	width: 100%;
 	color: $white;
-	font-size:24px;
+	font-size:32px;
 	font-family: $font;
 	text-align: center;
-}   
+	padding-top: 50px;
+}
+
 .container {
 	background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/concrete-texture.png");
 	display: flex;
@@ -66,14 +65,14 @@ body{
   .rating > input:not(:checked) ~ label:hover ~ label {
 	background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23d8b11e' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
   }
-  img{
+  .img__rating{
 	  width: 46%;
   }
   
   .emoji-wrapper {
 	width: 100%;
 	text-align: center;
-	height: 100px;
+	height: 110px;
 	overflow: hidden;
 	position: absolute;
 	top: 0;
@@ -92,12 +91,12 @@ body{
   
   .emoji-wrapper:before {
 	top: 0;
-	background: linear-gradient(to bottom, rgba(29,29,29,1) 0%rgba(29,29,29,1) 35%,rgba(255,255,255,0) 100%);
+	background: linear-gradient(to bottom, rgba(29,29,29,1) 0%,rgba(29,29,29, 1) 35%,rgba(255,255,255,0) 100%);
   }
   
   .emoji-wrapper:after{
 	bottom: 0;
-	background: linear-gradient(to top, rgbargba(29,29,29,1) 0%,rgba(29,29,29,1) 35%,rgba(255,255,255,0) 100%);
+	background: linear-gradient(to top, rgba(29,29,29,1) 0%,rgba(29,29,29,1) 35%,rgba(255,255,255,0) 100%);
   }
   
   .emoji {
@@ -109,15 +108,15 @@ body{
   
 
   
-  #rating-1:checked ~ .emoji-wrapper > .emoji { transform: translateY(-105px); }
-  #rating-2:checked ~ .emoji-wrapper > .emoji { transform: translateY(-210px); }
-  #rating-3:checked ~ .emoji-wrapper > .emoji { transform: translateY(-318px); }
-  #rating-4:checked ~ .emoji-wrapper > .emoji { transform: translateY(-418px); }
-  #rating-5:checked ~ .emoji-wrapper > .emoji { transform: translateY(-525px); }
+  #rating-1:checked ~ .emoji-wrapper > .emoji { transform: translateY(-100px); }
+  #rating-2:checked ~ .emoji-wrapper > .emoji { transform: translateY(-205px); }
+  #rating-3:checked ~ .emoji-wrapper > .emoji { transform: translateY(-310px); }
+  #rating-4:checked ~ .emoji-wrapper > .emoji { transform: translateY(-410px); }
+  #rating-5:checked ~ .emoji-wrapper > .emoji { transform: translateY(-515px); }
   
   .feedback {
 	max-width: 360px;
-	background-color: $gray;
+	background-color:$gray;
 	width: 100%;
 	padding: 30px;
 	border-radius: 8px;
@@ -126,5 +125,8 @@ body{
 	flex-wrap: wrap;
 	align-items: center;
 	box-shadow: 0 4px 30px rgba(0,0,0,.05);
+	margin-top: 100px;
+	margin-bottom: 100px;
   }
+  
   

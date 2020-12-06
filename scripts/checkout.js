@@ -91,7 +91,5 @@ comprar.addEventListener("click", function(event){
       console.error("Error adding document: ", error);
     });
 
-
-    window.location.href="/Taller-2-Web/htmls/rating.html"
 });
 
