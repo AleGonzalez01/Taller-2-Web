@@ -2093,6 +2093,7 @@ __info {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #141414;
 }
 
 .interactionPo__title {
